@@ -1,11 +1,12 @@
 $(document).ready(function() {
-  var height = parseInt(prompt("Please enter your height in inches to see available rides"));
+  var height = parseInt(prompt("Please enter your height in inches to highlight available rides:"));
 
   if (height < 48) {
-    $('#kids').show();
+    $(".kids").css("background-color", "yellow");
   } else if (height < 60){
-    $('#tweens').show();
+    $(".tweens").css("background-color", "yellow");
   } else {
-    $('#adults').show();
+    $(".adults").css("background-color", "yellow");
+
   }
 });
